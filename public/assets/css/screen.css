@@ -1,0 +1,25 @@
+@media screen and (max-width: 1024px) {
+    .down_arrow_circle{
+        display: block;
+    }
+    .down_desktop{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .down_arrow_circle{
+        display: none;
+    }
+    .down_desktop{
+        display: block;
+    }
+}
+@media screen and (max-width: 1024px) and (orientation:landscape) {
+    .down_arrow_circle{
+        display: none;
+    }
+    .down_desktop{
+        display: block;
+    }
+}

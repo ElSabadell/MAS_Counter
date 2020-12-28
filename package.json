@@ -1,0 +1,19 @@
+{
+  "name": "mas_counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElSabadell/MAS_Counter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElSabadell/MAS_Counter/issues"
+  },
+  "homepage": "https://github.com/ElSabadell/MAS_Counter#readme"
+}

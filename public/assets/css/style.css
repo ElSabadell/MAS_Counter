@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+body{
+ background-color: #121212 !important;
+}
+
+.card{
+  border: 1px solid transparent !important;
+}
+
+#pp-nav{
+  display: none;
+}
+
+.menu_list{
+  font-family: 'Roboto Mono';
+  color: #3b3b3b;
+  text-decoration: none !important;
+  padding: 3px;
+  transition: all .6s ease-in-out;
+  border-radius: 5px;
+}
+
+.menu_list:hover{
+  background-color: #4d4d4d;
+  color: #121212;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.menu_list > .menu_igloo{
+  visibility: hidden;
+}
+.menu_list:hover > .menu_line_1{
+  visibility: hidden;
+}
+.menu_list:hover > .menu_igloo{
+  visibility: visible;
+}
+
+.menu_list > .menu_user{
+  visibility: hidden;
+}
+.menu_list:hover > .menu_line_2{
+  visibility: hidden;
+}
+.menu_list:hover > .menu_user{
+  visibility: visible;
+}
+
+.menu_list > .menu_cookie_bite{
+  visibility: hidden;
+}
+.menu_list:hover > .menu_line_3{
+  visibility: hidden;
+}
+.menu_list:hover > .menu_cookie_bite{
+  visibility: visible;
+}
+
+.down_line_desktop{
+  background-color: #8b8b8b;
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.down_text_desktop{
+  color: #8b8b8b;
+  font-size: 10px;
+  font-family: 'Open Sans';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.down_arrow_circle{
+  color: #8b8b8b;
+  border: 2px solid #4d4d4d;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 5px;
+  left: 10%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 5px; 
+  z-index: 15 !important;
+}
+
+.down_arrow_circle > .fa-arrow-down{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.down_arrow_circle:hover{
+  background-color: #4d4d4d;
+}
+nav{
+  z-index: 3 !important;
+}
