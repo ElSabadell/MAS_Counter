@@ -1,7 +1,4 @@
 @media screen and (max-width: 1024px) {
-    .down_arrow_circle{
-        display: block;
-    }
     .down_desktop{
         display: none;
     }
@@ -9,6 +6,25 @@
         display: none;
     }
     .cursor{
+        display: none;
+    }
+    .pop{
+        display: none;
+    }
+    .vertical{
+        font-size: 40px;
+    }
+    .vertical_me_mobile{
+        color: rgb(162, 0, 255) !important;
+    }
+    .card_about_mobile{
+        position: absolute;
+        top: 50%;
+        left: 30% !important;
+        transform: translateX(-50%) translateY(-50%) !important;
+        padding-left: 30px;
+    }
+    .horizontal_about{
         display: none;
     }
 }
@@ -20,6 +36,12 @@
     .down_desktop{
         display: block;
     }
+    .down_line_mobile{
+        display: none;
+    }
+    .down_text_mobile{
+        display: none;
+    }
 }
 @media screen and (max-width: 1024px) and (orientation:landscape) {
     .down_arrow_circle{
@@ -27,5 +49,11 @@
     }
     .down_desktop{
         display: block;
+    }
+    .down_line_mobile{
+        display: none;
+    }
+    .down_text_mobile{
+        display: none;
     }
 }

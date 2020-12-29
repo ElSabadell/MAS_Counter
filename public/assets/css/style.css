@@ -5,6 +5,11 @@
 
 body {
   background-color: #000 !important;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
@@ -16,6 +21,7 @@ body {
 }
 
 .menu_list {
+  background-color: #121212;
   font-size: 25px;
   letter-spacing: 1px;
   font-family: 'VT323';
@@ -96,6 +102,15 @@ body {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
+.down_line_mobile{
+  background-color: #8b8b8b;
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  transform: translateX(-50%) translateY(-50%);
+}
 
 .down_text_desktop {
   color: #8b8b8b;
@@ -134,7 +149,7 @@ body {
 nav {
   z-index: 3 !important;
 }
-video {
+#vid {
   width: 100%;
   height: 70vh;
   filter: blur(5px);
@@ -318,18 +333,49 @@ video {
 }
 
 
-.cursor{
+/* .cursor{
   background-color: white;
   width: 30px;
   height: 30px;
   border-radius: 100px;
-  position: fixed;
+  position: fixed !important;
   mix-blend-mode: difference !important;
-  z-index: 100 !important;
-}
-.cursor > .menu_list:hover{
-  display: none !important;
-}
-html, body, nav, a{
+  
+} */
+
+/* html, body, nav, a{
   cursor: none !important;
+} */
+.vertical{
+  font-family: "didot";
+  letter-spacing: 4px;
+  font-size: 90px;
+  margin: 0;
+   writing-mode: vertical-lr;
+  text-align: center;
+  line-height: .75;
+}
+.vertical_about{
+  transform: rotate(180deg);
+}
+
+.grid_vertical{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: max-content max-content;
+}
+
+.pop{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 
+            8px 8px #ff1f8f,
+            17px 17px #a3e111,
+            20px 20px #000000;
+            
 }

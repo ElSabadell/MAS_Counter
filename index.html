@@ -7,14 +7,15 @@
   <meta name="google-site-verification" content="AfwjQqCYJJ4kEnQG5JkUB5eFq4KBoFJT2xVxsNjVqiU" />
   <link rel="stylesheet" href="/public/assets/css/style.css" />
   <link rel="stylesheet" href="/public/assets/css/screen.css" />
+  <link rel="shortcut icon" href="/public/assets/img/favicon.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
   <title>MAS - home</title>
-  <link rel="stylesheet" type="text/css" href="/public/assets/css/jquery.pagepiling.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="/public/assets/css/jquery.pagepiling.css" /> -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <!-- Pagepiling.js -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="/public/assets/js/jquery.pagepiling.js"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/public/assets/js/jquery.pagepiling.js"></script> -->
   <!-- Fontoso -->
   <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
 
@@ -22,10 +23,9 @@
 </head>
 
 <body style="" >
-  <div id="pagepiling">
-
-    <div class="section home" id="home" style="height: 100vh;">
-      <div class="card"
+  <div class="container-fluid all" style="min-height: 100vh;">
+      <div class="container-fluid home" id="home" style="height: 100vh;">
+        <div class="card"
         style="background-color: transparent; z-index: 10; position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);">
         <div class="content">
           <h2 style="font-size: 'VT323';" class="text" data-text="welcome into my webSite">
@@ -33,7 +33,6 @@
         </div>
       </div>
       <video id="vid" src="/public/assets/vids/v1.mp4" muted loop autoplay style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);"></video>
-
     <!-- SCROLL section DESKTOP -->
     <section class="down_desktop">
       <div class="down_line_desktop"></div>
@@ -42,29 +41,43 @@
       </div>
     </section>
     <!-- SCROLL section MOBILE -->
-    <a href="">
-      <div class="down_arrow_circle"><i class="fas fa-arrow-down"></i></div>
-    </a>
+    <div class="down_line_mobile"></div>
+    <div class="down_text_mobile">
+      <p align="left" style="font-size: 10px; color: #8b8b8b; position: absolute; bottom: 10px; left: 20px;">SCROLL</p>
     </div>
-    <div class="section about" id="about">
-      <div class="container-fluid"  style="height: 100vh; width: 100%;">
-        <img style="position: absolute; bottom: 0; left: 0; transform: scaleX(-1);" src="/public/assets/img/me.png" alt="">
       </div>
-    </div>
-    <div class="section stuff" id="stuff" style="height: 100vh;">bunch of stuff</div>
-  
-  </div>
+    
+      <div class="container-fluid about"  style="height: 100vh; width: 100%; position: absolute; top: 100vh; left: 0;">
+        <div class="grid_vertical">
+          <h1 class="vertical vertical_about" style="color: rgb(163, 225, 17);">about</h1>
+          <h1 class="vertical vertical_me_mobile" style="color: rgb(163, 225, 17);">me</h1>
+          <h1 class="horizontal_about" style="font-family: 'VT323'; color: rgb(162, 0, 255);">about me</h1>
+          
+        </div>
+        <div class="card" style="background-color: transparent; border: 1px solid transparent;">
+          <div class="card-title">
+            <h1 class="pop" style="font-family: 'Rajdhani'; font-size: 200px;">MY STORY</h1>
+          </div>
+        </div>
+        <!-- <img style="position: absolute; bottom: 0; left: 0; transform: scaleX(-1); filter: invert(30%);" src="/public/assets/img/me.png"> -->
+        <video src="/public/assets/vids/v2.mp4" style="position: absolute; bottom: 0; transform: scaleX(-1); left: 0;" muted loop autoplay></video>
+        <div class="card card_about_mobile" style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); background-color: transparent; border: 1px solid transparent; color: white; font-family: 'Roboto Mono'; text-align: right;">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem magnam quas accusamus rem ex sequi quae non, quod debitis eligendi, temporibus alias minus magni, quo necessitatibus eum laborum veritatis in hic iste esse iure illum. Cumque ea repellendus quam consequatur cum iusto sed, quis qui placeat quibusdam odit ipsa.</p>
+        </div>
+      </div>
+    <!-- <div class="section stuff" id="stuff" style="height: 100vh;">bunch of stuff</div> -->
+
   
   <nav class="fixed-bottom custom">
     <ul id="menu">
-      <li data-menuanchor="home" style="text-align: right; list-style: none; padding-right: 10px; padding-bottom: 3px;">
+      <li style="text-align: right; list-style: none; padding-right: 10px; padding-bottom: 3px;">
         <a href="#home" class="menu_list menu_list_1"><b>home</b><span class="menu_line_1">&nbsp;-</span><span class="menu_igloo"><i
               class="fas fa-igloo"></i>&nbsp;</span></a></li>
-      <li data-menuanchor="about"
+      <li 
         style="text-align: right; list-style: none; padding-right: 10px; padding-bottom: 3px;"><a href="#about"
           class="menu_list menu_list_2"><b>about</b><span class="menu_line_2">&nbsp;-</span><span class="menu_user"><i
               class="fas fa-user"></i>&nbsp;</span></a></li>
-      <li data-menuanchor="stuff" class="active"
+      <li  class="active"
         style="text-align: right; list-style: none; padding-right: 10px; padding-bottom: 3px;"><a href="#stuff"
           class="menu_list menu_list_3"><b>bunch of stuff</b><span class="menu_line_3">&nbsp;-</span><span class="menu_cookie_bite"><i
               class="fas fa-cookie-bite"></i>&nbsp;</span></a></li>
@@ -72,6 +85,7 @@
    
   </nav>
   <div class="cursor"></div>
+</div>
   <script src="/public/assets/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
