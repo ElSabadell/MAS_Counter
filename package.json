@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ElSabadell/MAS_Counter/issues"
   },
-  "homepage": "https://github.com/ElSabadell/MAS_Counter#readme"
+  "homepage": "https://github.com/ElSabadell/MAS_Counter#readme",
+  "dependencies": {
+    "morphing-pointer": "^0.4.0"
+  }
 }

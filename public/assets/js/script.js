@@ -20,3 +20,13 @@ $(document).ready(function () {
 	  },
 	});
   });
+
+  const cursor = document.querySelector('.cursor');
+  document.addEventListener('mousemove', (e) => {
+	  cursor.style.left = e.pageX + 'px';
+	  cursor.style.top = e.pageY + 'px';
+  })
+
+  setTimeout(function(){
+	document.getElementById('vid').play();
+},1000);

@@ -5,6 +5,12 @@
     .down_desktop{
         display: none;
     }
+    video{
+        display: none;
+    }
+    .cursor{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1024px) {
