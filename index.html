@@ -19,20 +19,28 @@
   <!-- Fontoso -->
   <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head>
 
 <body style="" >
   <div class="container-fluid all" style="min-height: 100vh;">
-      <div class="container-fluid home" id="home" style="height: 100vh;">
+      <div class="container-fluid home" id="home" style="height: 100vh;" data-relative-input="true" id="scene">
         <div class="card"
         style="background-color: transparent; z-index: 10; position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);">
         <div class="content">
-          <h2 style="font-size: 'VT323';" class="text" data-text="welcome into my webSite">
-            welcome into my webSite</h2>
+          <div id="scene">
+            <h2 data-depth="0.8" style="font-size: 'VT323';" class="text welcome_text" data-text="welcome into my webSite" data-relative-input="true">
+              welcome into my webSite</h2>
+              
+          </div>
         </div>
       </div>
-      <video id="vid" src="/public/assets/vids/v1.mp4" muted loop autoplay style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);"></video>
+      <video class="vid_mobile" src="/public/assets/vids/v4.mp4" muted loop autoplay style="width: 200px; position: absolute; top: 20%; left: 50%; transform: translateX(-50%) translateY(-50%);"></video>
+      <video class="vid_mobile" src="/public/assets/vids/v5.mp4" muted loop autoplay style="width: 200px; position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);"></video>
+      <video class="vid_mobile" src="/public/assets/vids/v6.mp4" muted loop autoplay style="width: 200px; position: absolute; top: 80%; left: 50%; transform: translateX(-50%) translateY(-50%);"></video>
+              
+        <video id="vid" src="/public/assets/vids/v1.mp4" muted loop autoplay style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);"></video>
+ 
     <!-- SCROLL section DESKTOP -->
     <section class="down_desktop">
       <div class="down_line_desktop"></div>
@@ -46,42 +54,44 @@
       <p align="left" style="font-size: 10px; color: #8b8b8b; position: absolute; bottom: 10px; left: 20px;">SCROLL</p>
     </div>
       </div>
+  
     
-      <div class="container-fluid about"  style="height: 100vh; width: 100%; position: absolute; top: 100vh; left: 0;">
+      <div class="container-fluid about" id="about" style="height: 100vh; width: 100%; position: absolute; top: 100vh; left: 0;">
         <div class="grid_vertical">
-          <h1 class="vertical vertical_about" style="color: rgb(163, 225, 17);">about</h1>
-          <h1 class="vertical vertical_me_mobile" style="color: rgb(163, 225, 17);">me</h1>
-          <h1 class="horizontal_about" style="font-family: 'VT323'; color: rgb(162, 0, 255);">about me</h1>
-          
+            <h1 class="vertical vertical_about" style="color: rgb(163, 225, 17);">about</h1>
+            <h1 class="vertical vertical_me_mobile" style="color: rgb(163, 225, 17);">me</h1>
+            <h1 class="horizontal_about" style="font-family: 'VT323'; color: rgb(162, 0, 255);">about me</h1>  
         </div>
         <div class="card" style="background-color: transparent; border: 1px solid transparent;">
           <div class="card-title">
-            <h1 class="pop" style="font-family: 'Rajdhani'; font-size: 200px;">MY STORY</h1>
+              <h1 class="pop" style="font-family: 'Rajdhani'; font-size: 10vw;">MY STORY</h1>
           </div>
         </div>
         <!-- <img style="position: absolute; bottom: 0; left: 0; transform: scaleX(-1); filter: invert(30%);" src="/public/assets/img/me.png"> -->
-        <video src="/public/assets/vids/v2.mp4" style="position: absolute; bottom: 0; transform: scaleX(-1); left: 0;" muted loop autoplay></video>
+        <video src="/public/assets/vids/v2.mp4" style="position: absolute; bottom: 0; transform: scaleX(-1); left: 0; z-index: -1; width: 25vw;" muted loop autoplay></video>
         <div class="card card_about_mobile" style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); background-color: transparent; border: 1px solid transparent; color: white; font-family: 'Roboto Mono'; text-align: right;">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem magnam quas accusamus rem ex sequi quae non, quod debitis eligendi, temporibus alias minus magni, quo necessitatibus eum laborum veritatis in hic iste esse iure illum. Cumque ea repellendus quam consequatur cum iusto sed, quis qui placeat quibusdam odit ipsa.</p>
+          <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem magnam quas accusamus rem ex sequi quae non, quod debitis eligendi, temporibus alias minus magni, quo necessitatibus eum laborum veritatis in hic iste esse iure illum. Cumque ea repellendus quam consequatur cum iusto sed, quis qui placeat quibusdam odit ipsa.</p>
         </div>
+        <video class="vid_mobile" src="/public/assets/vids/v3.mp4" muted loop autoplay style="position: absolute; right: 30px; top: 40%; width: 80px;"></video>
       </div>
     <!-- <div class="section stuff" id="stuff" style="height: 100vh;">bunch of stuff</div> -->
 
   
   <nav class="fixed-bottom custom">
-    <ul id="menu">
-      <li style="text-align: right; list-style: none; padding-right: 10px; padding-bottom: 3px;">
-        <a href="#home" class="menu_list menu_list_1"><b>home</b><span class="menu_line_1">&nbsp;-</span><span class="menu_igloo"><i
-              class="fas fa-igloo"></i>&nbsp;</span></a></li>
-      <li 
-        style="text-align: right; list-style: none; padding-right: 10px; padding-bottom: 3px;"><a href="#about"
-          class="menu_list menu_list_2"><b>about</b><span class="menu_line_2">&nbsp;-</span><span class="menu_user"><i
-              class="fas fa-user"></i>&nbsp;</span></a></li>
-      <li  class="active"
-        style="text-align: right; list-style: none; padding-right: 10px; padding-bottom: 3px;"><a href="#stuff"
-          class="menu_list menu_list_3"><b>bunch of stuff</b><span class="menu_line_3">&nbsp;-</span><span class="menu_cookie_bite"><i
-              class="fas fa-cookie-bite"></i>&nbsp;</span></a></li>
-    </ul>
+      <ul id="menu">
+        <li style="text-align: right; list-style: none; padding-right: 10px; padding-bottom: 3px;">
+          <a href="#home" class="menu_list menu_list_1"><b>home</b><span class="menu_line_1">&nbsp;-</span><span class="menu_igloo"><i
+                class="fas fa-igloo"></i>&nbsp;</span></a></li>
+        <li 
+          style="text-align: right; list-style: none; padding-right: 10px; padding-bottom: 3px;"><a href="#about"
+            class="menu_list menu_list_2"><b>about</b><span class="menu_line_2">&nbsp;-</span><span class="menu_user"><i
+                class="fas fa-user"></i>&nbsp;</span></a></li>
+        <li  class="active"
+          style="text-align: right; list-style: none; padding-right: 10px; padding-bottom: 3px;"><a href="#stuff"
+            class="menu_list menu_list_3"><b>bunch of stuff</b><span class="menu_line_3">&nbsp;-</span><span class="menu_cookie_bite"><i
+                class="fas fa-cookie-bite"></i>&nbsp;</span></a></li>
+      </ul>
+
    
   </nav>
   <div class="cursor"></div>

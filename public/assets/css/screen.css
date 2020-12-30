@@ -2,8 +2,11 @@
     .down_desktop{
         display: none;
     }
-    video{
+    #vid{
         display: none;
+    }
+    .vid_mobile{
+        display: block;
     }
     .cursor{
         display: none;
@@ -19,14 +22,21 @@
     }
     .card_about_mobile{
         position: absolute;
-        top: 50%;
+        top: 45% !important;
         left: 30% !important;
         transform: translateX(-50%) translateY(-50%) !important;
-        padding-left: 30px;
+        padding-left: 50px;
+    }
+    .card_about_mobile > p{
+        font-size: 1em !important;
     }
     .horizontal_about{
         display: none;
     }
+    .welcome_text{
+        display: none !important;
+    }
+    
 }
 
 @media screen and (min-width: 1024px) {
@@ -42,6 +52,12 @@
     .down_text_mobile{
         display: none;
     }
+    .vid_mobile{
+        display: none;
+    }
+    .welcome_text{
+        display: block;
+    }
 }
 @media screen and (max-width: 1024px) and (orientation:landscape) {
     .down_arrow_circle{
@@ -55,5 +71,11 @@
     }
     .down_text_mobile{
         display: none;
+    }
+    .vid_mobile{
+        display: none;
+    }
+    .welcome_text{
+        display: block;
     }
 }

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ElSabadell/MAS_Counter#readme",
   "dependencies": {
-    "morphing-pointer": "^0.4.0"
+    "morphing-pointer": "^0.4.0",
+    "paroller.js": "^1.4.7"
   }
 }
